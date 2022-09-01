@@ -1,0 +1,20 @@
+name: branche issue
+on: 
+  issues:
+    types:
+      - opened
+env: 
+  NAME:  c'est issues 
+
+jobs:
+  
+
+    runs-on: ubuntu-latest
+    steps:
+      - name:
+        if: ${issue.title}'
+      - name: validation
+        run: echo "c'est validé"
+
+
+
